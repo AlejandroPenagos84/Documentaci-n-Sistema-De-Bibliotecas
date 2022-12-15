@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modulos_Proyecto &mdash; documentación de Sistema De Bibliotecas - 1.0.0</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Sistema De Bibliotecas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Documentación Sistema De Biblioteca</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sistema De Bibliotecas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Código de módulo</a></li>
+      <li class="breadcrumb-item active">modulos_Proyecto</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Código fuente para modulos_Proyecto</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="Libro"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Libro">[documentos]</a><span></span><span class="k">class</span> <span class="nc">Libro</span><span class="p">:</span>
+  <span class="sd">&#39;&#39;&#39;La clase Libro define los atributos que va a tener cada libro</span>
+
+<span class="sd">  :param nombreLibro: Nombre Del Libro</span>
+<span class="sd">  :type nombreLibro: str</span>
+<span class="sd">  :param genero: Género Del Libro</span>
+<span class="sd">  :type genero: str</span>
+<span class="sd">  :param autor: Nombre Del Autor</span>
+<span class="sd">  :type autor: str</span>
+<span class="sd">  :param codigo: Código del libro</span>
+<span class="sd">  :type codigo: str</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombreLibro</span><span class="p">,</span><span class="n">genero</span><span class="p">,</span> <span class="n">autor</span><span class="p">,</span><span class="n">codigo</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">nombreLibro</span> <span class="o">=</span> <span class="n">nombreLibro</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">autor</span> <span class="o">=</span> <span class="n">autor</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">estado</span> <span class="o">=</span> <span class="s2">&quot;Disponible&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">codigo</span><span class="o">=</span><span class="n">codigo</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">genero</span><span class="o">=</span><span class="n">genero</span></div>
+
+<div class="viewcode-block" id="persona"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.persona">[documentos]</a><span class="k">class</span> <span class="nc">persona</span><span class="p">:</span>
+  <span class="sd">&#39;&#39;&#39;Representa una persona</span>
+
+<span class="sd">  :param nombre: Nombre De La Persona</span>
+<span class="sd">  :type nombre: str</span>
+<span class="sd">  :param apellido: Apellido De La Persona</span>
+<span class="sd">  :type apellido: str</span>
+<span class="sd">  :param codigo: Código De La Persona</span>
+<span class="sd">  :type codigo: str</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">apellido</span> <span class="o">=</span> <span class="n">apellido</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">codigo</span> <span class="o">=</span> <span class="n">codigo</span>
+
+<div class="viewcode-block" id="persona.ConsultarLibro"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.persona.ConsultarLibro">[documentos]</a>  <span class="k">def</span> <span class="nf">ConsultarLibro</span><span class="p">(</span><span class="n">libro</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Consulta si está registrado un libro</span>
+
+<span class="sd">    :param libro: Es el parametro con el cual se busca el libro. Puede ser nombre, autor, género, o código</span>
+<span class="sd">    :type libro: str</span>
+<span class="sd">    :return: Lista De Libros</span>
+<span class="sd">    :rtype: list</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">libro</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+    <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+    <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">lista_libros</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">contador</span><span class="o">=</span><span class="mi">2</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">libro</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+          <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+              <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="c1">#print(&quot;linea 40 consultar prueba&quot;, i)</span>
+                <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                    <span class="n">texto_Final</span><span class="o">=</span><span class="n">texto_Final</span><span class="o">+</span><span class="n">x</span>
+                  <span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                    <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                  <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                  <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                  <span class="k">if</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+                      <span class="n">lista_libros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+                  <span class="k">else</span><span class="p">:</span>
+                    <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span>
+                  <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">lista_libros</span><span class="o">=</span><span class="mi">0</span>
+            <span class="k">return</span> <span class="n">lista_libros</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">lista_libros</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">return</span> <span class="n">lista_libros</span>
+    <span class="k">return</span> <span class="n">lista_libros</span></div></div>
+
+<div class="viewcode-block" id="Funcionario"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Funcionario">[documentos]</a><span class="k">class</span> <span class="nc">Funcionario</span><span class="p">(</span><span class="n">persona</span><span class="p">):</span>
+  <span class="sd">&#39;&#39;&#39;Representa un Funcionario, la persona encargada de administrar el inventario de libros</span>
+<span class="sd">  </span>
+<span class="sd">  :param nombre: Nombre de la Persona</span>
+<span class="sd">  :type nombre: str</span>
+<span class="sd">  :param apellido: Apellido de la persona</span>
+<span class="sd">  :type apellido: str</span>
+<span class="sd">  :param codigo: Codigo de la persona</span>
+<span class="sd">  :type codigo: str</span>
+<span class="sd">  :param contraseña: Contraseña que usará el funcionario para iniciar sesión</span>
+<span class="sd">  :type contraseña: str</span>
+<span class="sd">  :param cargo: Cargo del Funcionario</span>
+<span class="sd">  :type cargo: str</span>
+<span class="sd">  :param genero: Género del Funcionario</span>
+<span class="sd">  :type genero: str</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">cargo</span><span class="p">,</span><span class="n">genero</span><span class="p">):</span>
+    
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_cargo</span> <span class="o">=</span> <span class="n">cargo</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_genero</span> <span class="o">=</span> <span class="n">genero</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_contraseña</span> <span class="o">=</span> <span class="n">contraseña</span>
+
+<div class="viewcode-block" id="Funcionario.almacenamiento_Funcionario"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Funcionario.almacenamiento_Funcionario">[documentos]</a>  <span class="k">def</span> <span class="nf">almacenamiento_Funcionario</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">cargo</span><span class="p">,</span><span class="n">genero</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Almacenamiento del Funcionario en el archivos &quot;objetos_Funcionario&quot;</span>
+
+<span class="sd">    :param nombre: Nombre del Funcionario</span>
+<span class="sd">    :type nombre: str</span>
+<span class="sd">    :param apellido: Apellido Del Funcionario</span>
+<span class="sd">    :type apellido: str</span>
+<span class="sd">    :param codigo: Código Del Funcionario</span>
+<span class="sd">    :type codigo: str</span>
+<span class="sd">    :param contraseña: Contraseña para iniciar sesión</span>
+<span class="sd">    :type contraseña: str</span>
+<span class="sd">    :param cargo: Cargo del Funcionario</span>
+<span class="sd">    :type cargo: str</span>
+<span class="sd">    :param genero: Género del Funcionario (Masculino, Femenino, No Especificado)</span>
+<span class="sd">    :type genero: str</span>
+<span class="sd">    :return: Guarda al Funcionario en el archivo &quot;objetos_Funcionario&quot;</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">cont_name</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">cont_last_name</span> <span class="o">=</span><span class="mi">0</span>
+    <span class="n">cont_code</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">cont_password</span> <span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nombre</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot; &quot;</span><span class="p">:</span>
+            <span class="n">cont_name</span><span class="o">=</span><span class="n">cont_name</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">apellido</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot; &quot;</span><span class="p">:</span>
+            <span class="n">cont_last_name</span><span class="o">=</span><span class="n">cont_last_name</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">codigo</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot; &quot;</span> <span class="ow">and</span> <span class="n">i</span><span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">cont_code</span><span class="o">=</span><span class="n">cont_code</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">contraseña</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot; &quot;</span><span class="p">:</span>
+            <span class="n">cont_password</span><span class="o">=</span><span class="n">cont_password</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">cont_name</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span><span class="ow">and</span> <span class="n">cont_last_name</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">apellido</span><span class="p">)</span> <span class="ow">and</span> <span class="n">cont_code</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">codigo</span><span class="p">)</span> <span class="ow">and</span> <span class="n">cont_password</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">contraseña</span><span class="p">):</span>
+        <span class="n">lista_objetos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Funcionario&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="n">personF</span> <span class="o">=</span> <span class="n">Funcionario</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">cargo</span><span class="p">,</span><span class="n">genero</span><span class="p">)</span>
+        <span class="n">lista_objetos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">personF</span><span class="o">.</span><span class="n">nombre</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span><span class="n">personF</span><span class="o">.</span><span class="n">apellido</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span><span class="n">personF</span><span class="o">.</span><span class="n">codigo</span> <span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="n">personF</span><span class="o">.</span><span class="n">_contraseña</span><span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span> <span class="n">personF</span><span class="o">.</span><span class="n">_cargo</span><span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="n">personF</span><span class="o">.</span><span class="n">_genero</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">lista_objetos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Funcionario.AgregarLibros"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Funcionario.AgregarLibros">[documentos]</a>  <span class="k">def</span> <span class="nf">AgregarLibros</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">genero</span><span class="p">,</span><span class="n">autor</span><span class="p">,</span><span class="n">codigo</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Guardar Libros en el archivo &quot;objetos_Libros&quot;</span>
+
+<span class="sd">    :param nombre: Nombre Del Libro</span>
+<span class="sd">    :type nombre: str</span>
+<span class="sd">    :param genero: Genenero Del Libro</span>
+<span class="sd">    :type genero: str</span>
+<span class="sd">    :param autor: Autor Del Libro</span>
+<span class="sd">    :type autor: str</span>
+<span class="sd">    :param codigo: Código Del Libro</span>
+<span class="sd">    :type codigo: str</span>
+<span class="sd">    :return: Guarda el libro con sus respectivos datos en el archivo &quot;objetos_Libros&quot;</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">lista_libros</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="n">libroAgregar</span> <span class="o">=</span> <span class="n">Libro</span><span class="p">(</span><span class="n">nombre</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span><span class="n">genero</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span><span class="n">autor</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span><span class="n">codigo</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">lista_libros</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">libroAgregar</span><span class="o">.</span><span class="n">nombreLibro</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span><span class="n">libroAgregar</span><span class="o">.</span><span class="n">genero</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">libroAgregar</span><span class="o">.</span><span class="n">autor</span> <span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="n">libroAgregar</span><span class="o">.</span><span class="n">estado</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="n">libroAgregar</span><span class="o">.</span><span class="n">codigo</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">lista_libros</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Funcionario.validar_Funcionario"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Funcionario.validar_Funcionario">[documentos]</a>  <span class="k">def</span> <span class="nf">validar_Funcionario</span><span class="p">(</span><span class="n">opcion</span><span class="p">,</span><span class="n">contraseña</span><span class="p">):</span>
+      <span class="sd">&#39;&#39;&#39;Valida si el usuario se encuentra en el archivo &quot;objetos_Funcionario&quot;</span>
+
+<span class="sd">      :param opcion: Código Del Funcionario</span>
+<span class="sd">      :param contraseña: Contraseña del Funcionario</span>
+<span class="sd">      :return: None</span>
+<span class="sd">      :rtype: None</span>
+<span class="sd">      &#39;&#39;&#39;</span>
+      <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Funcionario&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Funcionario&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+      <span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+      <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">texto_Final</span> <span class="o">=</span> <span class="n">texto_Final</span> <span class="o">+</span> <span class="n">x</span>
+                    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                              <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                              <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                    <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                    <span class="k">if</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">opcion</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">opcion</span> <span class="p">:</span>
+                            <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">==</span><span class="n">contraseña</span><span class="p">:</span>
+                                <span class="k">return</span> <span class="n">lista</span><span class="p">,</span><span class="n">i</span>
+                            <span class="k">else</span><span class="p">:</span>
+                                <span class="k">return</span> <span class="mi">0</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">1</span>
+                    <span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+                        <span class="k">return</span> <span class="mi">0</span>
+      <span class="k">else</span><span class="p">:</span>
+          <span class="k">return</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="Funcionario.EliminarLibros"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Funcionario.EliminarLibros">[documentos]</a>  <span class="k">def</span> <span class="nf">EliminarLibros</span><span class="p">(</span><span class="n">codigo</span><span class="p">):</span>
+      <span class="sd">&#39;&#39;&#39;Elimina el Libro del Archivo &quot;objetos_Libros&quot;</span>
+
+<span class="sd">      :param codigo: Codigo del Libro que será eliminado</span>
+<span class="sd">      :type codigo: str</span>
+<span class="sd">      :return: None</span>
+<span class="sd">      &#39;&#39;&#39;</span>
+      <span class="n">opcion</span> <span class="o">=</span> <span class="n">codigo</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">temp</span><span class="o">=</span><span class="p">[]</span>
+      <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+      <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+      <span class="n">lista2</span><span class="o">=</span><span class="p">[]</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">t</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+              <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                  <span class="n">texto_Final</span><span class="o">=</span><span class="n">texto_Final</span><span class="o">+</span><span class="n">x</span>
+                <span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                  <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                  <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+              <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="n">opcion</span><span class="p">:</span>
+                  <span class="n">lista2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+                  <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                  <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span>
+                <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">archivo_Final</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+        <span class="n">archivo_Final</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">archivo_Final</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
+          <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)):</span>
+          <span class="k">if</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">archivo_Final</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">archivo_Final</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">lista2</span></div></div>
+
+<div class="viewcode-block" id="Estudiante"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Estudiante">[documentos]</a><span class="k">class</span> <span class="nc">Estudiante</span><span class="p">(</span><span class="n">persona</span><span class="p">):</span>
+  <span class="sd">&#39;&#39;&#39;Representa al estudiante</span>
+
+<span class="sd">  :param nombre: Nombre Del Estudiante</span>
+<span class="sd">  :type nombre: str</span>
+<span class="sd">  :param apellido: Apellido Del Estudiante</span>
+<span class="sd">  :type apellido: str</span>
+<span class="sd">  :param codigo: Código Del Estudiante</span>
+<span class="sd">  :type codigo: str</span>
+<span class="sd">  :param contraseña: Contraseña para iniciar sesión del Estudiante</span>
+<span class="sd">  :type contraseña: str</span>
+<span class="sd">  :param facultad: Facultad a la que pertenece el estudiante</span>
+<span class="sd">  :type facultad: str</span>
+<span class="sd">  :param genero: Género Del Estudiante</span>
+<span class="sd">  :type genero: str</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">facultad</span><span class="p">,</span><span class="n">genero</span><span class="p">):</span>
+
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">apellido</span><span class="p">,</span> <span class="n">codigo</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">facultad</span> <span class="o">=</span> <span class="n">facultad</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">genero</span><span class="o">=</span> <span class="n">genero</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_contraseña</span><span class="o">=</span> <span class="n">contraseña</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">reserva</span><span class="o">=</span> <span class="s2">&quot; &quot;</span>
+
+<div class="viewcode-block" id="Estudiante.almacenamiento_Estudiantes"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Estudiante.almacenamiento_Estudiantes">[documentos]</a>  <span class="k">def</span> <span class="nf">almacenamiento_Estudiantes</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">apellido</span><span class="p">,</span><span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">facultad</span><span class="p">,</span><span class="n">genero</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Almacena Estudiantes en el archivo &quot;objetos_Estudiantes&quot;</span>
+
+<span class="sd">    :param nombre: Nombre Del Estudiante</span>
+<span class="sd">    :type nombre: str</span>
+<span class="sd">    :param apellido: Apellido Del Estudiante</span>
+<span class="sd">    :type apellido: str</span>
+<span class="sd">    :param codigo: Código Del Estudiante</span>
+<span class="sd">    :type codigo: str</span>
+<span class="sd">    :param contraseña: Contraseña para iniciar sesión del Estudiante</span>
+<span class="sd">    :type contraseña: str</span>
+<span class="sd">    :param facultad: Facultad a la que pertenece el estudiante</span>
+<span class="sd">    :type facultad: str</span>
+<span class="sd">    :param genero: Género Del Estudiante</span>
+<span class="sd">    :type genero: str</span>
+<span class="sd">    :return: None</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">lista_objetos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="n">personE</span> <span class="o">=</span> <span class="n">Estudiante</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="n">apellido</span><span class="p">,</span><span class="n">codigo</span><span class="p">,</span><span class="n">contraseña</span><span class="p">,</span><span class="n">facultad</span><span class="p">,</span><span class="n">genero</span><span class="p">)</span>
+    <span class="n">lista_objetos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">personE</span><span class="o">.</span><span class="n">nombre</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">personE</span><span class="o">.</span><span class="n">apellido</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">personE</span><span class="o">.</span><span class="n">codigo</span> <span class="o">+</span><span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">personE</span><span class="o">.</span><span class="n">_contraseña</span> <span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span> <span class="n">personE</span><span class="o">.</span><span class="n">facultad</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span><span class="o">+</span> <span class="n">personE</span><span class="o">.</span><span class="n">genero</span> <span class="o">+</span><span class="s2">&quot;,&quot;</span><span class="o">+</span><span class="n">personE</span><span class="o">.</span><span class="n">reserva</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">lista_objetos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Estudiante.pedir_libro"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Estudiante.pedir_libro">[documentos]</a>  <span class="k">def</span> <span class="nf">pedir_libro</span><span class="p">(</span><span class="n">posicion</span><span class="p">,</span><span class="n">codigo_Libro</span><span class="p">):</span>
+      <span class="sd">&#39;&#39;&#39;Le permite al usuario pedir un libro, cambiando su estado de &quot;Disponible&quot; a &quot;Reservado&quot;</span>
+
+<span class="sd">      :param posicion: Posición del Usuario En El Fichero</span>
+<span class="sd">      :type posicion: int</span>
+<span class="sd">      :param codigo_Libro: Código del Libro</span>
+<span class="sd">      :type codigo_Libro: str</span>
+<span class="sd">      :return: Pedir Libro</span>
+<span class="sd">      :rtype: bool</span>
+<span class="sd">      &#39;&#39;&#39;</span>
+      <span class="n">f</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">posicion</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">f</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="n">texto_Final</span><span class="o">+</span><span class="n">i</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+          <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+          <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;&quot;</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+            <span class="n">l</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">l</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+            <span class="n">ñ</span><span class="o">=</span><span class="n">l</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">lista_Libros</span><span class="o">=</span><span class="p">[]</span>
+            <span class="n">temp</span><span class="o">=</span><span class="p">[]</span>
+            <span class="n">contador1</span><span class="o">=</span><span class="mi">0</span>
+            <span class="n">w</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ñ</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ñ</span><span class="p">)):</span>
+                  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">w</span><span class="o">=</span> <span class="n">w</span><span class="o">+</span> <span class="n">x</span>
+                      <span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">lista_Libros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                        <span class="n">w</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="n">lista_Libros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                      <span class="n">w</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                      <span class="k">if</span> <span class="n">lista_Libros</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">codigo_Libro</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+                        <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                        <span class="n">contador1</span><span class="o">+=</span><span class="mi">1</span>
+                      <span class="n">lista_Libros</span><span class="o">=</span><span class="p">[]</span>
+
+                <span class="k">if</span> <span class="n">contador1</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+                  <span class="n">lista_Libros_c</span><span class="o">=</span><span class="p">[]</span>
+                  <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                  <span class="n">textoFinal</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                  <span class="k">for</span> <span class="n">per</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">[</span><span class="n">per</span><span class="p">]:</span>
+                      <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                          <span class="n">textoFinal_Libros</span><span class="o">=</span> <span class="n">textoFinal_Libros</span><span class="o">+</span><span class="n">x</span>
+                      <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                          <span class="n">lista_Libros_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">textoFinal_Libros</span><span class="p">)</span>
+                          <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                      <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                          <span class="n">lista_Libros_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">textoFinal_Libros</span><span class="p">)</span>
+                          <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                    <span class="k">if</span>  <span class="n">lista_Libros_c</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">!=</span><span class="s2">&quot;Reservado&quot;</span><span class="p">:</span>
+                      <span class="k">if</span> <span class="n">lista_Libros_c</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="n">codigo_Libro</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                          <span class="n">lista_Libros_c</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="s2">&quot;Reservado&quot;</span>
+                          <span class="n">cont</span><span class="o">=</span><span class="mi">1</span>
+                          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista_Libros_c</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">cont</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">lista_Libros_c</span><span class="p">):</span>
+                              <span class="n">textoFinal</span><span class="o">=</span><span class="n">textoFinal</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&quot;,&quot;</span>
+                            <span class="k">if</span> <span class="n">cont</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">lista_Libros_c</span><span class="p">):</span>
+                              <span class="n">textoFinal</span><span class="o">=</span><span class="n">textoFinal</span><span class="o">+</span><span class="n">i</span>
+                            <span class="n">cont</span><span class="o">=</span><span class="n">cont</span><span class="o">+</span><span class="mi">1</span>                        
+                          <span class="n">ñ</span><span class="p">[</span><span class="n">per</span><span class="p">]</span><span class="o">=</span><span class="n">textoFinal</span>
+                          <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+                          <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>    
+                          <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">:</span>
+                            <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                          <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>              
+                          <span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">=</span><span class="n">codigo_Libro</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+                          <span class="n">cont</span><span class="o">=</span><span class="mi">1</span>
+                          <span class="n">textoFi</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">cont</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+                              <span class="n">textoFi</span><span class="o">=</span><span class="n">textoFi</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&quot;,&quot;</span>
+                            <span class="k">if</span> <span class="n">cont</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+                              <span class="n">textoFi</span><span class="o">=</span><span class="n">textoFi</span><span class="o">+</span><span class="n">i</span>
+                            <span class="n">cont</span><span class="o">=</span><span class="n">cont</span><span class="o">+</span><span class="mi">1</span>  
+                          <span class="n">b</span><span class="p">[</span><span class="n">f</span><span class="p">]</span><span class="o">=</span><span class="n">textoFi</span>
+                          <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+                          <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>    
+                          <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
+                            <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                          <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                          <span class="k">return</span> <span class="mi">1</span>
+                      <span class="k">else</span><span class="p">:</span>                    
+                        <span class="n">lista_Libros_c</span><span class="o">=</span><span class="p">[]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                      <span class="k">return</span> <span class="mi">2</span>
+                <span class="k">elif</span> <span class="n">contador1</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                  <span class="k">return</span> <span class="mi">3</span>
+            <span class="k">else</span><span class="p">:</span>
+              <span class="k">return</span> <span class="mi">4</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="Estudiante.validar_Estudiante"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Estudiante.validar_Estudiante">[documentos]</a>  <span class="k">def</span> <span class="nf">validar_Estudiante</span><span class="p">(</span><span class="n">opcion</span><span class="p">,</span><span class="n">contraseña</span><span class="p">):</span>
+      <span class="sd">&#39;&#39;&#39;Valida si un estudiante se encuentra registrado en el momento de iniciar sesión</span>
+
+<span class="sd">      :param opcion: Código del Estudiante</span>
+<span class="sd">      :param contraseña: Contraseña del Usuario Para Iniciar Sesión</span>
+<span class="sd">      :type contraseña: str</span>
+<span class="sd">      :return: None</span>
+<span class="sd">      :rtype: None</span>
+<span class="sd">      &#39;&#39;&#39;</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+      <span class="n">t</span><span class="o">=</span><span class="mi">1</span>
+
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+              <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                  <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                          <span class="n">texto_Final</span> <span class="o">=</span> <span class="n">texto_Final</span> <span class="o">+</span> <span class="n">x</span>
+                      <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                          <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                          <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                  <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+                      <span class="c1">#print(lista, &quot;prueba linea 364 modulos_proyecto, aceptar usuario&quot;)</span>
+                      <span class="n">texto_Final</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                      <span class="k">if</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">opcion</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                          <span class="c1">#print(lista, &quot;prueba linea 367 modulos_proyecto, aceptar usuario&quot;)</span>
+                          <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">opcion</span><span class="p">:</span>
+                              <span class="c1">#print(lista, &quot;prueba linea 388 modulos_proyecto, aceptar usuario&quot;)</span>
+                              <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">contraseña</span><span class="p">:</span>
+                                  <span class="k">return</span> <span class="n">lista</span><span class="p">,</span><span class="n">i</span>
+                              <span class="k">else</span><span class="p">:</span>
+                                  <span class="k">return</span> <span class="mi">0</span>
+                          <span class="k">else</span><span class="p">:</span>
+                              <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">1</span>
+                      <span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+                  <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+                      <span class="c1">#print(lista, &quot;prueba linea 380 modulos_proyecto, aceptar usuario&quot;)</span>
+                      <span class="k">return</span> <span class="mi">0</span>
+      <span class="k">else</span><span class="p">:</span>
+          <span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+          <span class="k">return</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="Estudiante.devolver_libro"><a class="viewcode-back" href="../modulos_Proyecto.html#modulos_Proyecto.Estudiante.devolver_libro">[documentos]</a>  <span class="k">def</span> <span class="nf">devolver_libro</span><span class="p">(</span><span class="n">posicion</span><span class="p">):</span>
+      <span class="sd">&#39;&#39;&#39;Devolver el libro que tenga reservado el usuariow</span>
+
+<span class="sd">      :param posicion: Posición del Usuario en el fichero</span>
+<span class="sd">      :type posicion: int</span>
+<span class="sd">      :return: Devuelve el libro</span>
+<span class="sd">      :rtype: bool</span>
+<span class="sd">      &#39;&#39;&#39;</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+      <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">[</span><span class="n">posicion</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="n">texto_Final</span><span class="o">+</span><span class="n">i</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+          <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+          <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">texto_Final</span><span class="p">)</span>
+          <span class="n">texto_Final</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+      <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">!=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">:</span>
+            <span class="n">opcion</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+            <span class="n">l</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">l</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+            <span class="n">ñ</span><span class="o">=</span><span class="n">l</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">lista_Libros</span><span class="o">=</span><span class="p">[]</span>
+            <span class="n">temp</span><span class="o">=</span><span class="p">[]</span>
+            <span class="n">w</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ñ</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ñ</span><span class="p">)):</span>
+                  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">w</span><span class="o">=</span> <span class="n">w</span><span class="o">+</span> <span class="n">x</span>
+                      <span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">lista_Libros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                        <span class="n">w</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                      <span class="n">lista_Libros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                      <span class="n">w</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                      <span class="k">if</span> <span class="n">lista_Libros</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">==</span><span class="n">opcion</span><span class="p">:</span>
+                          <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                      <span class="n">lista_Libros</span><span class="o">=</span><span class="p">[]</span>
+                <span class="n">codigo_Libro</span><span class="o">=</span><span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+                <span class="n">lista_Libros_c</span><span class="o">=</span><span class="p">[]</span>
+                <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                <span class="n">textoFinal</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                <span class="k">for</span> <span class="n">per</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
+                  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">[</span><span class="n">per</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">textoFinal_Libros</span><span class="o">=</span> <span class="n">textoFinal_Libros</span><span class="o">+</span><span class="n">x</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;,&quot;</span><span class="p">:</span>
+                        <span class="n">lista_Libros_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">textoFinal_Libros</span><span class="p">)</span>
+                        <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                        <span class="n">lista_Libros_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">textoFinal_Libros</span><span class="p">)</span>
+                        <span class="n">textoFinal_Libros</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                  <span class="k">if</span> <span class="n">lista_Libros_c</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="n">codigo_Libro</span><span class="p">:</span>
+                      <span class="n">lista_Libros_c</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="s2">&quot;Disponible&quot;</span>
+                      <span class="n">cont</span><span class="o">=</span><span class="mi">1</span>
+                      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista_Libros_c</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">cont</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">lista_Libros_c</span><span class="p">):</span>
+                          <span class="n">textoFinal</span><span class="o">=</span><span class="n">textoFinal</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&quot;,&quot;</span>
+                        <span class="k">if</span> <span class="n">cont</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">lista_Libros_c</span><span class="p">):</span>
+                          <span class="n">textoFinal</span><span class="o">=</span><span class="n">textoFinal</span><span class="o">+</span><span class="n">i</span>
+                        <span class="n">cont</span><span class="o">=</span><span class="n">cont</span><span class="o">+</span><span class="mi">1</span>
+                      <span class="n">ñ</span><span class="p">[</span><span class="n">per</span><span class="p">]</span><span class="o">=</span><span class="n">textoFinal</span>
+                      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+                      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Libros&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ñ</span><span class="p">:</span>
+                        <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                      <span class="n">lista</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+                      <span class="n">cont</span><span class="o">=</span><span class="mi">1</span>
+                      <span class="n">textoFi</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+                      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">cont</span><span class="o">!=</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+                          <span class="n">textoFi</span><span class="o">=</span><span class="n">textoFi</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&quot;,&quot;</span>
+                        <span class="k">if</span> <span class="n">cont</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+                          <span class="n">textoFi</span><span class="o">=</span><span class="n">textoFi</span><span class="o">+</span><span class="n">i</span>
+                        <span class="n">cont</span><span class="o">=</span><span class="n">cont</span><span class="o">+</span><span class="mi">1</span>
+                      <span class="n">b</span><span class="p">[</span><span class="n">posicion</span><span class="p">]</span><span class="o">=</span><span class="n">textoFi</span>
+                      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+                      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                      <span class="n">a</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos_Estudiantes&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
+                        <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                      <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                      <span class="k">return</span> <span class="mi">3</span>
+            <span class="k">else</span><span class="p">:</span>
+              <span class="k">return</span>  <span class="mi">0</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, Javier Alejandro Penagos Hernández y Yohan Steven Jimenéz Hilarión.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main module &mdash; documentación de Sistema De Bibliotecas - 1.0.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="modulos_Proyecto module" href="modulos_Proyecto.html" />
+    <link rel="prev" title="Documentación Sistema De Biblioteca" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Sistema De Bibliotecas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Documentación Sistema De Biblioteca</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">main module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main.Pedir_Libros"><code class="docutils literal notranslate"><span class="pre">Pedir_Libros()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.Pedir_Libros_Proceso"><code class="docutils literal notranslate"><span class="pre">Pedir_Libros_Proceso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.consultar_libro_proceso"><code class="docutils literal notranslate"><span class="pre">consultar_libro_proceso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.consultar_libros"><code class="docutils literal notranslate"><span class="pre">consultar_libros()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.destructor"><code class="docutils literal notranslate"><span class="pre">destructor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.devolver_libro"><code class="docutils literal notranslate"><span class="pre">devolver_libro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.eliminar_Libro_Proceso"><code class="docutils literal notranslate"><span class="pre">eliminar_Libro_Proceso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.elimininar_Libro"><code class="docutils literal notranslate"><span class="pre">elimininar_Libro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.inicio"><code class="docutils literal notranslate"><span class="pre">inicio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.inicio_sesion_Funcionario"><code class="docutils literal notranslate"><span class="pre">inicio_sesion_Funcionario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.inicio_sesion_estudiante"><code class="docutils literal notranslate"><span class="pre">inicio_sesion_estudiante()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.registrar"><code class="docutils literal notranslate"><span class="pre">registrar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.registro_Estudiantes"><code class="docutils literal notranslate"><span class="pre">registro_Estudiantes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.registro_Libros"><code class="docutils literal notranslate"><span class="pre">registro_Libros()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.registro_funcionario"><code class="docutils literal notranslate"><span class="pre">registro_funcionario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.validar_Funcionario_Interfaz"><code class="docutils literal notranslate"><span class="pre">validar_Funcionario_Interfaz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.validar_estudiante_Interfaz"><code class="docutils literal notranslate"><span class="pre">validar_estudiante_Interfaz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main.volver_Menu"><code class="docutils literal notranslate"><span class="pre">volver_Menu()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modulos_Proyecto.html">modulos_Proyecto module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sistema De Bibliotecas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Documentación Sistema De Biblioteca</a></li>
+      <li class="breadcrumb-item active">main module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/main.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-main">
+<span id="main-module"></span><h1>main module<a class="headerlink" href="#module-main" title="Enlace permanente a este encabezado"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="main.Pedir_Libros">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">Pedir_Libros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posicion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#Pedir_Libros"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.Pedir_Libros" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz que permite pedir un libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>posicion</strong> (<em>int</em>) – Posición de usuario dentro del fichero</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.Pedir_Libros_Proceso">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">Pedir_Libros_Proceso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">posicion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo_Libro</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#Pedir_Libros_Proceso"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.Pedir_Libros_Proceso" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Toma los datos del libro que se quiere pedir</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Da un Mensaje en caso de que el libro se encuentre reservado, no exista o el usuario tenga un libro reservado</p></li>
+<li><p><strong>posicion</strong> (<em>int</em>) – Posición del usuario en el fichero</p></li>
+<li><p><strong>codigo_Libro</strong> (<em>str</em>) – Código Del Libro</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.consultar_libro_proceso">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">consultar_libro_proceso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libro</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#consultar_libro_proceso"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.consultar_libro_proceso" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Retorna una interfaz con la lista de libros que está disponible</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>libro</strong> (<em>str</em>) – Código del libro</p></li>
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Colocar mensajes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.consultar_libros">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">consultar_libros</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#consultar_libros"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.consultar_libros" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz de consultar libros</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve</dt>
+<dd class="field-odd"><p>Interfaz para búsqueda de los libros</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.destructor">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">destructor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre_raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#destructor"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.destructor" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Destruye la raiz</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>nombre_raiz</strong> (<em>Tkinter</em>) – Nombre de la Raiz</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.devolver_libro">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">devolver_libro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">posicion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#devolver_libro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.devolver_libro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Devuelve el libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Contenedor de un mensaje</p></li>
+<li><p><strong>posicion</strong> (<em>int</em>) – Posición del usuario en el fichero</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.eliminar_Libro_Proceso">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">eliminar_Libro_Proceso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#eliminar_Libro_Proceso"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.eliminar_Libro_Proceso" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Elimina un libro de la lista</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Contenedor de un mensaje</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código del libro</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.elimininar_Libro">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">elimininar_Libro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#elimininar_Libro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.elimininar_Libro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Permite ingresar el código para eliminar el libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.inicio">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">inicio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#inicio"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.inicio" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz menú Principal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.inicio_sesion_Funcionario">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">inicio_sesion_Funcionario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#inicio_sesion_Funcionario"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.inicio_sesion_Funcionario" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz para iniciar sesión del funcionario</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> – Destruye La Raiz Anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.inicio_sesion_estudiante">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">inicio_sesion_estudiante</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#inicio_sesion_estudiante"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.inicio_sesion_estudiante" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz para iniciar sesión del estudiante</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> (<em>Tkinter</em>) – Raiz Anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.registrar">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">registrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#registrar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.registrar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz que permite elegir el tipo de usuario</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> (<em>Tkinter</em>) – Destruye la raiz anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.registro_Estudiantes">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">registro_Estudiantes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#registro_Estudiantes"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.registro_Estudiantes" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz para el registro de un estudiante</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> – Destruye la raiz anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.registro_Libros">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">registro_Libros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opcion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#registro_Libros"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.registro_Libros" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz para el registro de libros</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>raiz</strong> (<em>Tkinter</em>) – Destruye la raiz Anterior</p></li>
+<li><p><strong>opcion</strong> (<em>str</em>) – Código del Funcionario</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña Del Funcionario</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.registro_funcionario">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">registro_funcionario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#registro_funcionario"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.registro_funcionario" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Interfaz para el registro de un funcionario</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> – Destruye la raiz anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.validar_Funcionario_Interfaz">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">validar_Funcionario_Interfaz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opcion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#validar_Funcionario_Interfaz"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.validar_Funcionario_Interfaz" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Valida la información del estudiante para poder iniciar sesión del funcionario:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Da un mensaje en caso de ingresar los datos erroneamente</p></li>
+<li><p><strong>raiz</strong> (<em>Tkinter</em>) – Destruir la raiz anterior</p></li>
+<li><p><strong>opcion</strong> (<em>str</em>) – Código del Funcionario</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña Del Funcionario</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.validar_estudiante_Interfaz">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">validar_estudiante_Interfaz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opcion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#validar_estudiante_Interfaz"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.validar_estudiante_Interfaz" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Valida la información del estudiante para poder iniciar sesión del estudiante</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<em>Tkinter</em>) – Da un mensaje en caso de ingresar los datos erroneamente</p></li>
+<li><p><strong>raiz</strong> (<em>Tkinter</em>) – Destruir la raiz anterior</p></li>
+<li><p><strong>opcion</strong> (<em>str</em>) – Código del Estudiante</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña para iniciar sesión</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.volver_Menu">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">volver_Menu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raiz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#volver_Menu"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#main.volver_Menu" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Vuelve al menú principal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>raiz</strong> – Destruye la raiz anterior</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="modules.html" class="btn btn-neutral float-left" title="Documentación Sistema De Biblioteca" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="modulos_Proyecto.html" class="btn btn-neutral float-right" title="modulos_Proyecto module" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, Javier Alejandro Penagos Hernández y Yohan Steven Jimenéz Hilarión.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

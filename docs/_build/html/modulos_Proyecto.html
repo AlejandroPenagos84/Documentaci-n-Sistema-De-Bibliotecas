@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modulos_Proyecto module &mdash; documentación de Sistema De Bibliotecas - 1.0.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="main module" href="main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Sistema De Bibliotecas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Documentación Sistema De Biblioteca</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">modulos_Proyecto module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modulos_Proyecto.Estudiante"><code class="docutils literal notranslate"><span class="pre">Estudiante</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Estudiante.almacenamiento_Estudiantes"><code class="docutils literal notranslate"><span class="pre">Estudiante.almacenamiento_Estudiantes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Estudiante.devolver_libro"><code class="docutils literal notranslate"><span class="pre">Estudiante.devolver_libro()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Estudiante.pedir_libro"><code class="docutils literal notranslate"><span class="pre">Estudiante.pedir_libro()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Estudiante.validar_Estudiante"><code class="docutils literal notranslate"><span class="pre">Estudiante.validar_Estudiante()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modulos_Proyecto.Funcionario"><code class="docutils literal notranslate"><span class="pre">Funcionario</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Funcionario.AgregarLibros"><code class="docutils literal notranslate"><span class="pre">Funcionario.AgregarLibros()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Funcionario.EliminarLibros"><code class="docutils literal notranslate"><span class="pre">Funcionario.EliminarLibros()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Funcionario.almacenamiento_Funcionario"><code class="docutils literal notranslate"><span class="pre">Funcionario.almacenamiento_Funcionario()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.Funcionario.validar_Funcionario"><code class="docutils literal notranslate"><span class="pre">Funcionario.validar_Funcionario()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modulos_Proyecto.Libro"><code class="docutils literal notranslate"><span class="pre">Libro</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modulos_Proyecto.persona"><code class="docutils literal notranslate"><span class="pre">persona</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modulos_Proyecto.persona.ConsultarLibro"><code class="docutils literal notranslate"><span class="pre">persona.ConsultarLibro()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sistema De Bibliotecas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Documentación Sistema De Biblioteca</a></li>
+      <li class="breadcrumb-item active">modulos_Proyecto module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modulos_Proyecto.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-modulos_Proyecto">
+<span id="modulos-proyecto-module"></span><h1>modulos_Proyecto module<a class="headerlink" href="#module-modulos_Proyecto" title="Enlace permanente a este encabezado"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="modulos_Proyecto.Estudiante">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modulos_Proyecto.</span></span><span class="sig-name descname"><span class="pre">Estudiante</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apellido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">facultad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">genero</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Estudiante"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Estudiante" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modulos_Proyecto.persona" title="modulos_Proyecto.persona"><code class="xref py py-class docutils literal notranslate"><span class="pre">persona</span></code></a></p>
+<p>Representa al estudiante</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre Del Estudiante</p></li>
+<li><p><strong>apellido</strong> (<em>str</em>) – Apellido Del Estudiante</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código Del Estudiante</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña para iniciar sesión del Estudiante</p></li>
+<li><p><strong>facultad</strong> (<em>str</em>) – Facultad a la que pertenece el estudiante</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Género Del Estudiante</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Estudiante.almacenamiento_Estudiantes">
+<span class="sig-name descname"><span class="pre">almacenamiento_Estudiantes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apellido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">facultad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">genero</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Estudiante.almacenamiento_Estudiantes"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Estudiante.almacenamiento_Estudiantes" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Almacena Estudiantes en el archivo «objetos_Estudiantes»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre Del Estudiante</p></li>
+<li><p><strong>apellido</strong> (<em>str</em>) – Apellido Del Estudiante</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código Del Estudiante</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña para iniciar sesión del Estudiante</p></li>
+<li><p><strong>facultad</strong> (<em>str</em>) – Facultad a la que pertenece el estudiante</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Género Del Estudiante</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Estudiante.devolver_libro">
+<span class="sig-name descname"><span class="pre">devolver_libro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Estudiante.devolver_libro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Estudiante.devolver_libro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Devolver el libro que tenga reservado el usuariow</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>posicion</strong> (<em>int</em>) – Posición del Usuario en el fichero</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Devuelve el libro</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Estudiante.pedir_libro">
+<span class="sig-name descname"><span class="pre">pedir_libro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">codigo_Libro</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Estudiante.pedir_libro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Estudiante.pedir_libro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Le permite al usuario pedir un libro, cambiando su estado de «Disponible» a «Reservado»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>posicion</strong> (<em>int</em>) – Posición del Usuario En El Fichero</p></li>
+<li><p><strong>codigo_Libro</strong> (<em>str</em>) – Código del Libro</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Pedir Libro</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Estudiante.validar_Estudiante">
+<span class="sig-name descname"><span class="pre">validar_Estudiante</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Estudiante.validar_Estudiante"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Estudiante.validar_Estudiante" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Valida si un estudiante se encuentra registrado en el momento de iniciar sesión</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opcion</strong> – Código del Estudiante</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña del Usuario Para Iniciar Sesión</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modulos_Proyecto.Funcionario">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modulos_Proyecto.</span></span><span class="sig-name descname"><span class="pre">Funcionario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apellido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cargo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">genero</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Funcionario"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Funcionario" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modulos_Proyecto.persona" title="modulos_Proyecto.persona"><code class="xref py py-class docutils literal notranslate"><span class="pre">persona</span></code></a></p>
+<p>Representa un Funcionario, la persona encargada de administrar el inventario de libros</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre de la Persona</p></li>
+<li><p><strong>apellido</strong> (<em>str</em>) – Apellido de la persona</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Codigo de la persona</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña que usará el funcionario para iniciar sesión</p></li>
+<li><p><strong>cargo</strong> (<em>str</em>) – Cargo del Funcionario</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Género del Funcionario</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Funcionario.AgregarLibros">
+<span class="sig-name descname"><span class="pre">AgregarLibros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">genero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Funcionario.AgregarLibros"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Funcionario.AgregarLibros" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Guardar Libros en el archivo «objetos_Libros»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre Del Libro</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Genenero Del Libro</p></li>
+<li><p><strong>autor</strong> (<em>str</em>) – Autor Del Libro</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código Del Libro</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Guarda el libro con sus respectivos datos en el archivo «objetos_Libros»</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Funcionario.EliminarLibros">
+<span class="sig-name descname"><span class="pre">EliminarLibros</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Funcionario.EliminarLibros"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Funcionario.EliminarLibros" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Elimina el Libro del Archivo «objetos_Libros»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>codigo</strong> (<em>str</em>) – Codigo del Libro que será eliminado</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Funcionario.almacenamiento_Funcionario">
+<span class="sig-name descname"><span class="pre">almacenamiento_Funcionario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apellido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cargo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">genero</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Funcionario.almacenamiento_Funcionario"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Funcionario.almacenamiento_Funcionario" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Almacenamiento del Funcionario en el archivos «objetos_Funcionario»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre del Funcionario</p></li>
+<li><p><strong>apellido</strong> (<em>str</em>) – Apellido Del Funcionario</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código Del Funcionario</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña para iniciar sesión</p></li>
+<li><p><strong>cargo</strong> (<em>str</em>) – Cargo del Funcionario</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Género del Funcionario (Masculino, Femenino, No Especificado)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Guarda al Funcionario en el archivo «objetos_Funcionario»</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.Funcionario.validar_Funcionario">
+<span class="sig-name descname"><span class="pre">validar_Funcionario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Funcionario.validar_Funcionario"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Funcionario.validar_Funcionario" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Valida si el usuario se encuentra en el archivo «objetos_Funcionario»</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opcion</strong> – Código Del Funcionario</p></li>
+<li><p><strong>contraseña</strong> – Contraseña del Funcionario</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modulos_Proyecto.Libro">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modulos_Proyecto.</span></span><span class="sig-name descname"><span class="pre">Libro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombreLibro</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">genero</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#Libro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.Libro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>La clase Libro define los atributos que va a tener cada libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombreLibro</strong> (<em>str</em>) – Nombre Del Libro</p></li>
+<li><p><strong>genero</strong> (<em>str</em>) – Género Del Libro</p></li>
+<li><p><strong>autor</strong> (<em>str</em>) – Nombre Del Autor</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código del libro</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modulos_Proyecto.persona">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modulos_Proyecto.</span></span><span class="sig-name descname"><span class="pre">persona</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apellido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codigo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#persona"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.persona" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Representa una persona</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> (<em>str</em>) – Nombre De La Persona</p></li>
+<li><p><strong>apellido</strong> (<em>str</em>) – Apellido De La Persona</p></li>
+<li><p><strong>codigo</strong> (<em>str</em>) – Código De La Persona</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="modulos_Proyecto.persona.ConsultarLibro">
+<span class="sig-name descname"><span class="pre">ConsultarLibro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modulos_Proyecto.html#persona.ConsultarLibro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos_Proyecto.persona.ConsultarLibro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Consulta si está registrado un libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>libro</strong> (<em>str</em>) – Es el parametro con el cual se busca el libro. Puede ser nombre, autor, género, o código</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Lista De Libros</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="main.html" class="btn btn-neutral float-left" title="main module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, Javier Alejandro Penagos Hernández y Yohan Steven Jimenéz Hilarión.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
